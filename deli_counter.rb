@@ -8,7 +8,7 @@ def line(katz_deli)
     intro_line << katz_deli.each_with_index { | people, index |
     "#{index + 1}. #{people}" }
   else
-    puts katz_deli
+    katz_deli
   end
 
 end
