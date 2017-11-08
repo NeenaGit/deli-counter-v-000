@@ -16,6 +16,7 @@ end
 def take_a_number(katz_deli, name)
   if katz_deli == []
     katz_deli << name
+    puts "Welcome, #{name}. You are number #{katz_deli.length} in line."}
   elsif katz_deli != []
     katz_deli.push(name).each_with_index { | person, index |
     puts "Welcome, #{person}. You are number #{index + 1} in line."}
