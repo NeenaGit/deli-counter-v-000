@@ -19,7 +19,7 @@ def take_a_number(katz_deli, person_inline)
     katz_deli.push(person_inline).each_with_index { | person, index |
     puts "Welcome, #{person}. You are number #{index + 1} in line."}
   else
-    katz_deli.each{ |e | e, person_inline }
+    katz_deli.each{ |e | person_inline }
   end
 end
 
@@ -27,7 +27,7 @@ def now_serving(katz_deli, person)
   if katz_deli == []
     puts "There is nobody waiting to be served!"
   else
-    katz_deli.unshift(person).each{ | next_person | 
+    katz_deli.unshift(person).each{ | next_person |
       puts "Currently serving #{next_person}."
     }
   end
