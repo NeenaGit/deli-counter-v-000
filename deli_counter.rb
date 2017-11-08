@@ -29,6 +29,6 @@ def now_serving(katz_deli, person)
   else
     katz_deli.unshift(person).each{ | next_person | 
       "Currently serving #{next_person}."
-    }  
-  end  
+    }
+  end
 end
