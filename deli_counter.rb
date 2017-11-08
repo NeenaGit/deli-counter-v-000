@@ -4,7 +4,7 @@ require 'pry'
 def line(katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
-  elsif katz_deli != []
+  elsif 
     intro_line = "The line is currently:"
         binding.pry
     katz_deli.each_with_index do | people, index |
