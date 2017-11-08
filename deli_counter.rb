@@ -9,6 +9,7 @@ def line(katz_deli)
         binding.pry
     katz_deli.each_with_index do | people, index |
      intro_line << "#{index + 1}. #{people}"
+    return intro_line
     end 
   end
 end
