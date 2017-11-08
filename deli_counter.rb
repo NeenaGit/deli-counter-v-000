@@ -13,11 +13,11 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, person_inline)
+def take_a_number(katz_deli, name)
   if katz_deli == []
-    katz_deli.unshift(person_inline)
+    katz_deli << name
   elsif katz_deli != []
-    katz_deli.push(person_inline).each_with_index { | person, index |
+    katz_deli.push(name).each_with_index { | person, index |
     puts "Welcome, #{person}. You are number #{index + 1} in line."}
   else
     katz_deli.each{ |e | person_inline }
