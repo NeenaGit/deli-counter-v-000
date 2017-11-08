@@ -7,8 +7,9 @@ def line(katz_deli)
   elsif katz_deli != []
     intro_line = "The line is currently:"
         binding.pry
-    intro_line << katz_deli.each_with_index { | people, index |
-    "#{index + 1}. #{people}" }
+    katz_deli.each_with_index do | people, index |
+     intro_line << "#{index + 1}. #{people}" 
+    end
   else
     katz_deli
   end
