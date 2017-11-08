@@ -28,7 +28,7 @@ def now_serving(katz_deli, person)
     puts "There is nobody waiting to be served!"
   else
     katz_deli.unshift(person).each{ | next_person | 
-      "Currently serving #{next_person}."
+      puts "Currently serving #{next_person}."
     }
   end
 end
