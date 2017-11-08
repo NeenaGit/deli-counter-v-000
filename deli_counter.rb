@@ -15,11 +15,10 @@ end
 def take_a_number(katz_deli, person_inline)
   if katz_deli == []
     katz_deli.unshift(person_inline)
-  elsif katz_deli != []   
+  elsif katz_deli != []
     katz_deli.push(person_inline).each_with_index { | person, index |
     puts "Welcome, #{person}. You are number #{index + 1} in line."}
   else
-  
-
+    katz_deli.each{ |e | e, person_inline }
   end
 end
