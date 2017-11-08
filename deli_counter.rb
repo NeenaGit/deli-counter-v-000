@@ -10,5 +10,9 @@ def line(katz_deli)
   else
     katz_deli
   end
+end
 
+def take_a_number(katz_deli, person_inline)
+  katz_deli.push(person_inline).each_with_index { | person, index |
+  puts "Welcome, #{person}. You are number #{index + 1} in line."}
 end
