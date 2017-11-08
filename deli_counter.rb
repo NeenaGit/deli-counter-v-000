@@ -10,7 +10,7 @@ def line(katz_deli)
     katz_deli.each_with_index do | people, index |
      intro_line << "#{index + 1}. #{people}"
     end
-   return intro_line
+   puts intro_line
   end
 end
 
