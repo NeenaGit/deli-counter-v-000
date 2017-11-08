@@ -22,3 +22,13 @@ def take_a_number(katz_deli, person_inline)
     katz_deli.each{ |e | e, person_inline }
   end
 end
+
+def now_serving(katz_deli, person)
+  if katz_deli == []
+    puts "There is nobody waiting to be served!"
+  else
+    katz_deli.unshift(person).each{ | next_person | 
+      "Currently serving #{next_person}."
+    }  
+  end  
+end
